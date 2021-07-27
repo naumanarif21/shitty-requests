@@ -143,3 +143,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REQUEST_IGNORE_PATHS = (
     r'^admin/',
 )
+
+
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static/'
