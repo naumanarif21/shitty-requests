@@ -8,8 +8,8 @@ from django.urls import path
 from django.http import HttpResponse, HttpResponseRedirect
 
 def give_response(request):
-    if random.random() > 0.5:
-        return HttpResponseRedirect('/1')
+    # if random.random() > 0.5:
+    #     return HttpResponseRedirect('/1')
     html = "<html><body>Silence in Beautiful.</body></html>"
     return HttpResponse(html)
 

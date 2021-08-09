@@ -46,8 +46,8 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'click_tracker.middleware.IPWhitelistMiddleware',
-    'request.middleware.RequestMiddleware',
+    # 'click_tracker.middleware.IPWhitelistMiddleware',
+    # 'request.middleware.RequestMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -88,11 +88,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'click_tracker',
-        'USER': 'admin',
-        'PASSWORD': 'admin',
+        'USER': 'click_tracker',
+        'PASSWORD': 'click_tracker@123###',
         'HOST': 'localhost',
         'PORT': '',
-        'ATOMIC_REQUESTS': True,
     }
 }
 
